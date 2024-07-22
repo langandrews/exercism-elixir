@@ -4,7 +4,7 @@ defmodule PaintByNumber do
   end
 
   defp log2(n, pow) do
-    if Integer.pow(2, pow) - n >= 0 do
+    if Integer.pow(2, pow) >= n do
       pow
     else
       log2(n, pow + 1)
